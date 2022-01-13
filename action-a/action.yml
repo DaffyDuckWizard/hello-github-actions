@@ -6,7 +6,7 @@ inputs:
   MY_NAME:
     description: "Who to greet"
     required: false
-    default: ${{ false }}
+    default: ${{ true }}
   
 runs:
   using: composite
