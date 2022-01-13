@@ -11,9 +11,9 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: "echo line 1"
+    - run: echo line 1
       shell: cmd
-    - run: "echo line 2"
+    - run: echo line 2
       shell: cmd
 
   
