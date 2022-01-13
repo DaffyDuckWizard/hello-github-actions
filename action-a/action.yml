@@ -6,14 +6,14 @@ inputs:
   MY_NAME:
     description: "variable name"
     required: false
-    default: ${{ 'true' }}
+    default: ${{ true }}
   
 runs:
   using: composite
   steps:
     - run: echo line 1
       shell: bash
-      if: ${{ inputs.MY_NAME }}
+      if:  true == inputs.MY_NAME
     - run: echo line 2
       shell: bash
 
