@@ -9,8 +9,14 @@ inputs:
     default: "World"
   
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: composite
+  steps:
+    - run: "echo line 1"
+      shell: cmd
+    - run: "echo line 2"
+      shell: cmd
+
+  
 
 branding:
   icon: "mic"
