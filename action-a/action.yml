@@ -7,6 +7,10 @@ inputs:
     description: "Who to greet"
     required: true
     default: "World"
+  test_var:
+    description: "Var for testing"
+    required: false
+    default: true
   
 runs:
   using: "docker"
