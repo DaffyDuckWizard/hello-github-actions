@@ -6,7 +6,7 @@ inputs:
   MY_NAME:
     description: "variable name"
     required: false
-    default: ${{ true }}
+    default: ${{ false }}
   
 runs:
   using: composite
