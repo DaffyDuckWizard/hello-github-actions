@@ -6,13 +6,14 @@ inputs:
   MY_NAME:
     description: "Who to greet"
     required: false
-    default: "World"
+    default: "false"
   
 runs:
   using: composite
   steps:
     - run: echo line 1
       shell: bash
+      if: ${{ inputs.MY_NAME }}
     - run: echo line 2
       shell: bash
 
