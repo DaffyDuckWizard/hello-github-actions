@@ -12,9 +12,9 @@ runs:
   using: composite
   steps:
     - run: echo line 1
-      shell: cmd
+      shell: bash
     - run: echo line 2
-      shell: cmd
+      shell: bash
 
   
 
