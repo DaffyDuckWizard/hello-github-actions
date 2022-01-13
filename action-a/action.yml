@@ -4,9 +4,9 @@ author: "octocat@github.com"
 
 inputs:
   MY_NAME:
-    description: "Who to greet"
+    description: "variable name"
     required: false
-    default: ${{ true }}
+    default: ${{ 'true' }}
   
 runs:
   using: composite
