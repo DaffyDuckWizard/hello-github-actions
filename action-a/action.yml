@@ -10,7 +10,7 @@ inputs:
   test_var:
     description: "Var for testing"
     required: false
-    default: true
+    default: ${{ true }}
   
 runs:
   using: "docker"
